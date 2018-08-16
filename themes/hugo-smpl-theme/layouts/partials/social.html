@@ -1,0 +1,59 @@
+<div class="row centered">
+  <div class="col-lg-8 col-lg-offset-2 w tooltip-demo">
+    {{ range .Site.Params.social }}
+      <a data-toggle="tooltip" title="{{ .title }}" href="{{ .link }}" target="_blank"><i class="fa {{ .icon }}"></i></a>
+    {{ end }}
+
+    <br>
+    
+    <br>
+
+    <button type="button" class="btn btn-outline btn-lg" data-toggle="modal" data-target="#address">LOCATION</button>
+        <!-- Modal -->
+        <div class="modal fade" id="address" role="dialog">
+          <div class="modal-dialog">        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">LOCATION</h4>
+              </div>
+              <div class="modal-body">
+                <p>Koramangala Post Office Grounds</p>
+                <div class="google-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6901974349285!2d77.62511191482152!3d12.927622390884663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae145ef24a26ef%3A0xb36c5fdfb7b4a48d!2sKoramangala+Post+Office+Grounds!5e0!3m2!1sen!2sin!4v1534244965309" width="555" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>  
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- Trigger the modal for google form -->
+        
+     <button type="button" class="btn btn-outline btn-lg" data-toggle="modal" data-target="#googleform">REGISTER</button>
+     <!-- Modal -->
+     <div class="modal fade" id="googleform" role="dialog">
+            <div class="modal-dialog">        
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Register your team!</h4>
+                </div>
+                <div class="modal-body">
+                 
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9vb5r-FkF-Nekw_bXYsSD7H6T77OPMIMMQcmATAcTQMgIrw/viewform?embedded=true" width="570" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                 
+               </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+     </div>
+
+  </div>
+</div>

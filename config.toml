@@ -1,0 +1,80 @@
+# Site settings
+baseurl = ""
+languageCode = "en-us"
+title = "POSC | Koramangala"
+theme = "hugo-smpl-theme"
+disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
+contentdir = "content"
+
+# Enter your tracking code to enable Google analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown for urls [text](//domain.tld/source)
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons.
+
+  # To provide more meta data for search engines feel free to add a few information.
+  # This lines will be inserted as meta tags.
+  name = "Post Office Sports Club"
+  description = "POSC is involved in promoting sport!"
+
+  # Background
+  [params.background]
+    image = "assets/img/bg.jpg"
+
+    # Enable and set background fade speed
+    [params.background.fade]
+      enable = true
+      speed = 500
+
+  # Logo section
+  [params.logo]
+    enable = false
+    image = "assets/img/logo.png"
+    alt = "posc"
+    width = "50"
+
+  # Tournament section
+  [params.tournament]
+    enable = true
+    title = "Upcoming tournament"
+    text = "Republic cup"
+    
+  # Header section
+  [params.header]
+    enable = true
+    title = "POST OFFICE SPORTS CLUB"
+
+  # Quote section
+  [params.quote]
+    enable = true
+    text = "POSC is involved in promoting sport!"
+
+  
+
+  # Social icons section
+  # Add a modifier class to increase size
+  # fa-lg, fa-2x, fa-3x, fa-4x, fa-5x
+  # e.g., icon = "fa-instagram fa-lg"
+  [params.social_icons]
+    enable = true
+
+  [[params.social]]
+    title = "Facebook"
+    icon = "fa-facebook-square fa-lg"
+    link = "https://www.facebook.com/POFCfootball/"
+
+  [[params.social]]
+    title = "WhatsApp"
+    icon = "fa-whatsapp fa-lg"
+    link = "https://wa.me/00919611126933"
+
+  [[params.social]]
+    title = "Email"
+    icon = "fa-envelope fa-lg"
+    link = "mailto:posportsclub@gmail.com"
+
+ 
+  
