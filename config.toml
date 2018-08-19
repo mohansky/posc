@@ -34,7 +34,7 @@ googleAnalytics = ""
     enable = true
     image = "assets/img/logo.png"
     alt = "posc"
-    width = "50"
+    width = "75"
 
   # Tournament section
   [params.tournament]
